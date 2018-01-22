@@ -11,16 +11,16 @@ These types of resources are supported:
 
 Root module calls these modules which can also be used separately to create independent resources:
 
-* [user]() - creates iam user
-* [access_key]() - creates access key to user
-* [policy]() - Creates a policy and attach it to user
+* [user](https://github.com/javilac/terraform-aws-iam/tree/master/modules/user) - creates iam user
+* [access_key](https://github.com/javilac/terraform-aws-iam/tree/master/modules/access_key) - creates access key to user
+* [policy](https://github.com/javilac/terraform-aws-iam/tree/master/modules/policy) - Creates a policy and attach it to user
 
 Usage
 -----
 
 ```hcl
 module "user" {
-  source = "<giturl>"
+  source = "github.com/javilac/terraform-aws-iam"
   user_name = "access-to-s3-examplebucket"
   policy_name = "access-to-s3-examplebucket-rw"
   policy = <<EOF
