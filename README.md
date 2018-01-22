@@ -5,9 +5,9 @@ Terraform module which creates IAM resources on AWS.
 
 These types of resources are supported:
 
-* [User](https://www.terraform.io/docs/providers/aws/r/iam_user.html)
-* [User Policy](https://www.terraform.io/docs/providers/aws/r/iam_policy.html)
-* [Access_key](https://www.terraform.io/docs/providers/aws/r/iam_access_key.html)
+* [iam_user](https://www.terraform.io/docs/providers/aws/r/iam_user.html)
+* [iam_policy](https://www.terraform.io/docs/providers/aws/r/iam_policy.html)
+* [iam_access_key](https://www.terraform.io/docs/providers/aws/r/iam_access_key.html)
 
 Root module calls these modules which can also be used separately to create independent resources:
 
