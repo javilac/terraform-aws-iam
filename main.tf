@@ -1,5 +1,3 @@
-#aws_iam_user
-
 module "user" {
   source = "./modules/user"
 
